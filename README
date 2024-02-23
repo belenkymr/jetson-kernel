@@ -12,6 +12,10 @@ with this tree. Adding this remote and switching to this branch is one possible 
 
 3.) Copy required modules to the target using SCP.  
 
+The module for tc358743 is located at: ./drivers/media/i2c/tc358743.ko
+
+4.) Load the module and enjoy
+
 Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
