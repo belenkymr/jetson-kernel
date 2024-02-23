@@ -1,4 +1,18 @@
-        Linux kernel release 4.x <http://kernel.org/>
+Instructions for rebuilding the kernel for Jetson (JP4.6.4)  
+=================================================================  
+
+1.) Replace the kernel tree in:  
+ `nvidia/nvidia_sdk/JetPack_4.6.4_Linux_JETSON_NANO_TARGETS/Linux_for_Tegra/sources/kernel/kernel-4.9`  
+with this tree. Adding this remote and switching to this branch is one possible option to do so.  
+
+2.) Rebuild with the custom configuration:  
+
+`make ARCH=arm64 aerium_tegra_defconfig`  
+`make ARCH=arm64 -j4 modules`  
+
+3.) Copy required modules to the target using SCP.  
+
+Linux kernel release 4.x <http://kernel.org/>
 
 These are the release notes for Linux version 4.  Read them carefully,
 as they tell you what this is all about, explain how to install the
